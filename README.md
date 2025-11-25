@@ -165,4 +165,4 @@ If you run into issues, try testing with a local WebSocket server first.
 Suggestions and contributions are welcome!
 
 - Open an issue or pull request on the repository:
-  - \`https://github.com/vijaydoba/WebSocket-Console.git`\
+  - `https://github.com/vijaydoba/WebSocket-Console.git`
