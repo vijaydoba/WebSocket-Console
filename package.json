@@ -1,0 +1,60 @@
+{
+  "name": "vscode-ws-console",
+  "displayName": "WebSocket Console",
+  "description": "Test and debug WebSocket endpoints directly from VS Code.",
+  "version": "0.1.1",
+  "publisher": "vijaydoba",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other",
+    "Debuggers"
+  ],
+  "keywords": [
+    "websocket",
+    "debug",
+    "tester",
+    "network"
+  ],
+  "icon": "images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/vscode-ws-console.git"
+  },
+  "activationEvents": [
+    "onCommand:wsConsole.open"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "wsConsole.open",
+        "title": "Open WebSocket Console",
+        "category": "WebSocket"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -w -p ./",
+    "vscode:prepublish": "npm run compile",
+    "package": "vsce package",
+    "start": "node server.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.6.0"
+  },
+  "dependencies": {
+    "undici-types": "^6.21.0",
+    "ws": "^8.18.3"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/your-username/vscode-ws-console/issues"
+  },
+  "homepage": "https://github.com/your-username/vscode-ws-console#readme"
+}
